@@ -1,0 +1,27 @@
+<div class="mat-typography">
+  <h3 style="text-align: center;">Esquema Firmas</h3>
+
+  <mat-form-field color="accent" appearance="outline" class="search-field">
+    <mat-label>Search</mat-label>
+    <input matInput (keyup)="updateFilter($event)" />
+  </mat-form-field>
+  <mat-form-field color="accent" appearance="outline" class="search-select">
+    <mat-select placeholder="Color">
+      <mat-option value="primary">Primary</mat-option>
+      <mat-option value="accent">Accent</mat-option>
+      <mat-option value="warn">Warn</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <ngx-datatable
+    #table
+    class="material"
+    [columns]="columns"
+    [columnMode]="ColumnMode.force"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    rowHeight="auto"
+    [limit]="10"
+    [rows]="rows"
+  >
+  </ngx-datatable>
+</div>

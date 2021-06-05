@@ -1,0 +1,13 @@
+.search-field {
+  width: 30%;
+  padding: 8px;
+  margin: 15px auto;
+  display: inline-block;
+}
+
+.search-select {
+  width: 30%;
+  display: inline-block;
+}
+
+
